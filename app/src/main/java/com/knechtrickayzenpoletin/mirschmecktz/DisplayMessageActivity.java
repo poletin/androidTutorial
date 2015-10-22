@@ -14,16 +14,13 @@ public class DisplayMessageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView textView = new TextView(this);
-        textView.setTextSize(42);
-        textView.setText(message);
-        setContentView(textView);
+        overridePendingTransition(R.animator.up_down, R.animator.down_up);
+        setContentView(R.layout.activity_display_message);
 
     }
 
+    public void onSaveEntry(View view){
 
+    }
 
 }
