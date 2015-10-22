@@ -11,7 +11,7 @@
     <EditText
         android:layout_height="wrap_content"
         android:hint="@string/edit_message"
-        android:id="@+id/editText"
+        android:id="@+id/editText2"
         android:layout_width="match_parent" />
     <RadioGroup
         android:layout_width="match_parent"
@@ -36,7 +36,16 @@
         android:gravity="center|bottom"
         android:orientation="vertical"
         android:layout_marginBottom="80dp">
-    <Button
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onTestReadDB"/>
+
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"

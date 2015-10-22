@@ -9,15 +9,9 @@
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
 
-    <EditText
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_message"
-        android:layout_weight="1"
-        android:id="@+id/editText" />
-    <Button
+    <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage"/>
+        android:layout_height="525dp"
+        android:id="@+id/listView" />
+
 </LinearLayout>
